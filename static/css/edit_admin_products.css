@@ -1,0 +1,86 @@
+
+:root {
+    --color-white: #F5F5F5;
+    --color-gris: #2E2D33;
+    --color-vino: #790614;
+    --color-input: #000000c0;
+    --color-barra-menu: #F9F6EC;
+    --color-letras-menu: #000000;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #f8f9fa;
+    padding: 0;
+    margin: 0;
+}
+
+
+.sidebar {
+    background-color: #790614; /* Rojo intenso */
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.sidebar img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.sidebar .footer {
+    border-top: 1px solid white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #790614;
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.btn-update {
+    background-color: #790614;
+    color: white;
+    border: none;
+}
+
+.btn-update:hover {
+    background-color: #a21b1b;
+}
+
+.btn-back {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #790614;
+    font-weight: 500;
+}
+
+.btn-back:hover {
+    color: #a21b1b;
+}

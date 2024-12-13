@@ -5,7 +5,6 @@
     --color-input: #000000c0;
     --color-barra-menu: #F9F6EC;
     --color-letras-menu: #000000;
-
 }
 
 * {
@@ -319,4 +318,43 @@ footer{
     font-size: 2.3em;
     text-align: center;
     padding: 10px;
+}
+
+.btn_ver{
+    font-family: "Inder", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--color-barra-menu);
+    color: var(--color-vino);
+    padding: 2px 8px 2px 8px;
+    border-radius: 5px;
+    border-style: none;
+    
+}
+
+.modal-title{
+    color: var(--color-vino);
+    font-family: "Inder", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    text-align: center;
+}
+
+.modal-p{
+    font-family: "Inder", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    text-align: center;
+    color: var(--color-gris);
+}
+
+.modal-price{
+    font-family: "Inder", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8em;
+    text-align: center;
+    color: var(--color-vino);
 }

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +26,6 @@
         href="https://fonts.googleapis.com/css2?family=Inder&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
 </head>
-
 <body>
     <!-- INICIO MENÚ -->
     <nav class="navbar navbar-expand-lg fixed-top" style="z-index: 1000000;">
@@ -91,7 +89,7 @@
                 </section>
             </section>
         </article><br>
-    </div> 
+    </div>
     <!-- FIN DE SECCION DE NOSOTROS -->
     <article class="container"><br>
         <h1 class="title_products">NUESTROS PRODUCTOS</h1>
@@ -110,10 +108,11 @@
                                 <h1>${{ product.price }}</h1>
                             </div>
                             <center>
-                                <form action="/cart/add/{{ product.id }}" method="POST" style="display:inline;">
-                                    <button type="submit" class="button_car"><i class="fa-solid fa-cart-shopping"></i>
-                                        Agregar al Carrito</button>
-                                </form>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn_ver" data-bs-toggle="modal"
+                                    data-bs-target="#modal{{ product.id }}">
+                                    <i class="fa-regular fa-eye"></i> Más información
+                                </button>
                             </center>
                         </div>
                     </div>
@@ -121,9 +120,48 @@
             </section><br>
             {% endfor %}
         </section>
+        <!-- Modal -->
+       <!-- Modales -->
+<div>
+    {% for product in products %}
+    <div class="modal fade" id="modal{{ product.id }}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="modalLabel{{ product.id }}" aria-hidden="true" style="z-index: 1000000; margin-top: 150px;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="/static/images/logo1.png" alt="" height="80x" width="80px">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-around">
+                        
+                        <div class="col-4">
+                            <img src="/static/images/casita.avif" alt="" class="img-fluid" style="align-items: center;">
+                        </div>
+                    
+                        <div class="col-4">
+                            <h1 class="card-title modal-title">{{ product.name }}</h1>
+                            <p class="modal-p">{{product.description}}</p>
+                            <div class="col-4 ">
+                                <h1 class="modal-price">${{ product.price }}</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <form action="/cart/add/{{ product.id }}" method="POST" style="display:inline;">
+                        <button type="submit" class="button_car"><i class="fa-solid fa-cart-shopping"></i> Agregar al
+                            Carrito</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
     </article><br>
     <!-- <a href="/checkout">Pagar</a> -->
-
     <footer>
         <article class="container">
             <section class="row">
@@ -150,5 +188,4 @@
     </footer>
     <!-- Fin de footer -->
 </body>
-
 </html>
