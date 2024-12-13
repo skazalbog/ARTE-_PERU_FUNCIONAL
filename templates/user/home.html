@@ -47,8 +47,10 @@
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="#seccion_nosotros">NOSOTROS</a>
                         </li>
+                    </ul>
                 </div>
             </div>
+            <a class="btn_vercarrito" href="/cart"><i class="fa-solid fa-cart-shopping"></i> Ver Carrito</a>
             <a href="Login.html" class="login_button">INGRESAR</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -89,79 +91,10 @@
                 </section>
             </section>
         </article><br>
-    </div>
+    </div> 
     <!-- FIN DE SECCION DE NOSOTROS -->
-     <!-- INICIO DE SECCION DE PRODUCTOS -->
-<section class="seccion_productos"><br>
-    <h1>NUESTROS PRODUCTOS</h1> <br>
-    <article class="container">
-        <section class="row">
-            <section class="col--xs-12 col-sm-12 col-md-4">
-                <div class="card">
-                    <img src="images/casita.avif" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">CASITA ARTESANAL</h5>
-                        <div class="row justify-content-center contenido">
-                            <div class="col-4 ">
-                                <del>198.50</del>
-                            </div>
-                            <div class="col-4 ">
-                                <h1>140.00</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section><br>
-            <section class="col--xs-12 col-sm-12 col-md-4">
-                <div class="card">
-                    <img src="images/casita.avif" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">CASITA ARTESANAL</h5>
-                        <div class="row justify-content-center contenido">
-                            <div class="col-4 ">
-                                <del>198.50</del>
-                            </div>
-                            <div class="col-4 ">
-                                <h1>140.00</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section><br>
-            <section class="col--xs-12 col-sm-12 col-md-4">
-                <div class="card">
-                    <img src="images/casita.avif" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">CASITA ARTESANAL</h5>
-                        <div class="row justify-content-center contenido">
-                            <div class="col-4 ">
-                                <del>198.50</del>
-                            </div>
-                            <div class="col-4 ">
-                                <h1>140.00</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section><br>
-        </section>
-    </article><br>
-
-</section>
-    
-    <a href="/cart">Ver Carrito</a> |
-    <ul>
-        {% for product in products %}
-        <li>
-            <strong>{{ product.name }}</strong> - ${{ product.price }}
-            <form action="/cart/add/{{ product.id }}" method="POST" style="display:inline;">
-                <button type="submit">Agregar al Carrito</button>
-            </form>
-        </li>
-        {% endfor %}
-    </ul>
-    
-    <article class="container">
+    <article class="container"><br>
+        <h1 class="title_products">NUESTROS PRODUCTOS</h1>
         <section class="row">
             {% for product in products %}
             <section class="col--xs-12 col-sm-12 col-md-4">
@@ -177,10 +110,11 @@
                                 <h1>${{ product.price }}</h1>
                             </div>
                             <center>
-                            <form action="/cart/add/{{ product.id }}" method="POST" style="display:inline;">
-                                <button type="submit" class="button_car"><i class="fa-solid fa-cart-shopping"></i> Agregar al Carrito</button>
-                            </form>
-                        </center>
+                                <form action="/cart/add/{{ product.id }}" method="POST" style="display:inline;">
+                                    <button type="submit" class="button_car"><i class="fa-solid fa-cart-shopping"></i>
+                                        Agregar al Carrito</button>
+                                </form>
+                            </center>
                         </div>
                     </div>
                 </div>

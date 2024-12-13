@@ -1,0 +1,96 @@
+:root {
+    --color-white: #F5F5F5;
+    --color-gris: #2E2D33;
+    --color-vino: #790614;
+    --color-input: #000000c0;
+    --color-barra-menu: #F9F6EC;
+    --color-letras-menu: #000000;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(135deg, #790614, #814b4b);
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-container {
+    background: #ffffff;
+    color: #790614;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.payment-container h1 {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #790614;
+    font-family: "Inder", sans-serif;
+}
+
+.btn-pay {
+    background: #790614;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.btn-pay:hover {
+    background: #a41a1f;
+    transform: scale(1.05);
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #790614;
+}
+
+.form-control:focus {
+    box-shadow: 0px 0px 5px #790614;
+    border-color: #790614;
+}
+
+.card-icons {
+    font-size: 26px;
+    margin-right: 10px;
+    color: #cf4646;
+}
+
+.secure-text {
+    font-size: 14px;
+    color: #6c757d;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.secure-text i {
+    color: #198754;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+    margin-top: 20px;
+}

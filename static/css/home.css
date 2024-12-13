@@ -301,3 +301,22 @@ footer{
     border: 1px solid var(--color-gris);
     background-color: var(--color-white);
 }
+
+.btn_vercarrito{
+    text-decoration: none;
+    font-family: "Inder", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-vino);
+    margin-right: 15px;
+}
+
+.title_products{
+    font-family: "Inder", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.3em;
+    text-align: center;
+    padding: 10px;
+}

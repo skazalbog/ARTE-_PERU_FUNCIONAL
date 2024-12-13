@@ -14,27 +14,46 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: #a82534;
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color:#b6303f ;
+    
 }
 
-.card-title{
-    font-family: "Inder", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    font-size: 3em;
+.fondo{
+    filter: blur(5px);
 }
-.button_volver{
-    font-family: "Inder", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    font-size: 1.2em;
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #343a40;
+    font-weight: 700;
+}
+
+.button_volver {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0d6efd;
+    color: #fff;
     text-decoration: none;
-    border: 1px solid var(--color-vino);
-    color: var(--color-white);
-    padding: 2px 4px 2px 4px;
-    background-color: #790614;
     border-radius: 5px;
+    font-weight: 600;
+}
+
+.button_volver:hover {
+    background-color: #004080;
+    text-decoration: none;
+}
+
+table thead {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
 }
