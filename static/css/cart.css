@@ -1,0 +1,40 @@
+:root {
+    --color-white: #F5F5F5;
+    --color-gris: #2E2D33;
+    --color-vino: #790614;
+    --color-input: #000000c0;
+    --color-barra-menu: #F9F6EC;
+    --color-letras-menu: #000000;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #a82534;
+}
+
+.card-title{
+    font-family: "Inder", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 3em;
+}
+.button_volver{
+    font-family: "Inder", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.2em;
+    text-decoration: none;
+    border: 1px solid var(--color-vino);
+    color: var(--color-white);
+    padding: 2px 4px 2px 4px;
+    background-color: #790614;
+    border-radius: 5px;
+}
