@@ -42,33 +42,39 @@
     </div>
     <div class="form-container">
         <h1>Agregar Producto</h1>
-        <form method="POST">
+        <form method="POST" enctype="multipart/form-data">
             <!-- Nombre -->
             <div class="mb-3">
                 <label for="name" class="form-label">Nombre del Producto:</label>
                 <input type="text" id="name" name="name" class="form-control" placeholder="Ingrese el nombre del producto" required>
             </div>
-
+        
             <!-- Descripción -->
             <div class="mb-3">
                 <label for="description" class="form-label">Descripción:</label>
                 <textarea id="description" name="description" class="form-control" rows="4" placeholder="Ingrese la descripción" required></textarea>
             </div>
-
+        
             <!-- Precio -->
             <div class="mb-3">
                 <label for="price" class="form-label">Precio:</label>
                 <input type="number" id="price" name="price" class="form-control" placeholder="Ingrese el precio" step="0.01" required>
             </div>
+            
+            <!--agregar imagen-->>
+         <div class="mb-3">
+            <label for="image" class="form-label">Imagen del Producto:</label>
+            <input type="file" id="image" name="image" class="form-control" accept="image/*" required>
+        </div>
 
             <!-- Botón Guardar -->
             <div class="d-grid">
                 <button type="submit" class="btn btn-save">Guardar Producto</button>
             </div>
         </form>
-
+        
         <!-- Botón Volver -->
-        <a href="/admin/products" class="btn-back">
+        <a href="/dashboard" class="btn-back">
             <i class="fas fa-arrow-left"></i> Volver a la lista de productos
         </a>
     </div>
